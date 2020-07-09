@@ -43,7 +43,7 @@ class TestShnatonParser(TestCase):
         group = groups[0]
 
         classes = CourseClass.objects.filter(group=group)
-        self.assertEquals(len(classes), 14, "There are 14 classes")
+        self.assertEquals(len(classes), 13, "There are 13 classes")
 
     def test_create_multiple_groups(self):
         self.parser.fetch_course(COURSE_2, YEAR)
